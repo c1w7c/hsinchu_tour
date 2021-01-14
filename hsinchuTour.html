@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>新竹市觀光景點</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="css/font_all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- self-css -->
+    <link rel="stylesheet" href="css/hsinchuTour.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid hsinchu-images py-5">
+            <h1 class="font-weight-normal text-white text-center mb-5">新竹市旅遊資訊
+                <span class="d-block hsinchuSpan display-5">Hsinchu City</span>
+            </h1>
+            <div class="row">
+                <div class="col-6 col-md-4 mx-auto ">
+                    <select class="custom-select text-dark font-weight-bolder border-white" name="hsinchuarea"
+                        id="hsinchuarea">
+                        <option value="" selected>--請選擇行政區域--</option>
+                        <option value="east">東區</option>
+                        <option value="north">北區</option>
+                        <option value="siangshan">香山區</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card famousarea">
+                <div class="card-body">
+                    <div class="card-title">熱門行政區</div>
+                    <button id='siangshan' class="btn btn-info btn-sm text-white btn-custom">香山區</button>
+                    <button id='east' class="btn btn-warning text-white btn-sm btn-custom">東區</button>
+                    <button id='north' class="btn btn-success btn-sm text-white btn-custom">北區</button>
+                </div>
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="container area">
+            <!-- <h2 class='text-center mb-3 areaname'>香山區</h2>
+        <div class="row">
+            <div class="col-md-6 leftviewsite">
+                <div class="card">
+                    <img src="images/1.jpg" class="card-img-top custom-card-img" alt="">
+                    <div class="card-body position-relative">
+                        <div class="card-title custom-card-title">
+                            新竹市政府
+                        </div>
+                        <div class="card-text">
+                            <p><i class="far fa-clock mr-1"></i>每週一到五8:00~17:00</p>
+                            <p><i class="fas fa-map-marker-alt mr-1"></i>新竹市北區中正路120號</p>
+                            <p><i class="fas fa-glasses mr-1"></i>新竹州廳建於1925年，建築形式為和洋混合風格，是當時常用建築風格。正門玄關採用雙柱式門廊搭配兩側小塔樓，頗有氣勢。大廳內的洋式拱廊與羅馬柱十分氣派，翼樓突出的量體增加了穩重感，整體形式視野開闊，氣勢磅礡。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 rightviewsite">
+                <div class="card">
+                    <img src="images/2.jpg" class="card-img-top custom-card-img" alt="">
+                    <div class="card-body position-relative">
+                        <div class="card-title custom-card-title">
+                            新竹市政府
+                        </div>
+                        <div class="card-text">
+                            <p><i class="far fa-clock"></i>每週一到五8:00~17:00</p>
+                            <p><i class="fas fa-map-marker-alt"></i>新竹市北區中正路120號</p>
+                            <p><i class="fas fa-glasses"></i>新竹州廳建於1925年，建築形式為和洋混合風格，是當時常用建築風格。正門玄關採用雙柱式門廊搭配兩側小塔樓，頗有氣勢。大廳內的洋式拱廊與羅馬柱十分氣派，翼樓突出的量體增加了穩重感，整體形式視野開闊，氣勢磅礡。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+        <ul class="pagination justify-content-center mt-3">
+            <!-- <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li> -->
+        </ul>
+    </main>
+    <footer id='footer' class="bg-success py-3 d-flex flex-column align-items-center">
+        <span class="text-white">新竹市旅遊資訊</span>
+        <span class="text-white">資料來源：新竹市政府</span>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/hsinchuTour.js"></script>
+</body>
+
+</html>
